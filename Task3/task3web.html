@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature converter</title>
+     <link rel="stylesheet" href="web3.css"> 
+</head>
+<body>
+    <h1 class="animated-text">This Is The Temperature Converter Webseite</h1>
+    <br>
+    <div class="container">
+    <div class="heading">
+    <h2>Please Enter The Temperature To Be converte</h2>
+    </div>
+    <div class="content">
+    <p>
+    <label>Fahrenheit:</label>
+    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+    </p>
+    <label>Celsius:   </label>
+				<input type="number"id="celsius">
+    <p>Celcius: <span id="outputCelcius"></span></p>
+  </div>
+  </div>   
+</body>
+<script >
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+
+} 
+// function temperatureConverter(valNum) {
+//   valNum = parseFloat(valNum);
+//   document.getElementById("outputKelvin").innerHTML=((valNum-32)/1.8)+273.15;
+// }
+</script> 
+
+</body>
+</html>
