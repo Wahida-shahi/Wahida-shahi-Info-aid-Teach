@@ -1,0 +1,50 @@
+body {
+  background-image: url('tem2.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed; 
+  background-size: 100% ;
+}
+h1{
+  color: gold;
+    text-align: center;
+}
+h2,p{
+  text-align: left;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animated-text {
+  animation: fadeIn 2s infinite;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.container {
+  margin-top: 10px;
+  width:84%;
+  height:400px;
+  padding: 120px;
+  background-color:a2d2ff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px black;
+}
+.content{
+  /* display: flex; */
+   width: 100%; 
+  
+  /* justify-content: space-between; */
+  border-radius: 10px; 
+}
+span{
+    
+  color:black;
+  font-size: 23px;
+  font-weight: 400;
+  text-shadow: 0 0 3px black;
+}
+
