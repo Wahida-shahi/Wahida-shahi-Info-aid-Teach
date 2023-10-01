@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>About Restaurant</title>
+    <style>
+        body{
+            background: url('bg.jpg') repeat;
+            background-size: 100% auto;
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+        }
+        p,li,ul,p1{
+            color: white;
+            font-size: 24px;
+        }
+ .top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="top-container">
+        <h4>hello restaurant</h4> 
+    </div> -->
+   <div class="header" id="myHeader">
+    <h1>This is all about our resturant</h1>
+   </div>
+    
+    <div class="content">
+    <p>
+        Shahi cuisine is one of the most famous kitchens around the world and is one of the most luxurious and characteristic cuisines in the world. It is the origin of pasta and pizza that is unparalleled anywhere else.
+        The Afgani restaurant is undoubtedly one of the most outstanding and magnificent food establishments in my city. Characterized by the quiet atmosphere, its light-colored interior and its elegant, glamorous decor, it was once a cafe before turning into a restaurant with many qualities of the former.
+        The restaurant offers delicious dining options, with Italian authentic flavor. Waiters in the restaurant are friendly and respectful.
+        <br>
+        SHAHI Restaurant is a F&B-Casual Dining outlet that offers a unique dining experience. 
+        The restaurant serves a variety of dishes from around the world, including Indian, Chinese, Italian, and Mexican cuisines. 
+        The menu features a wide selection of appetizers, entrees, desserts, and drinks.
+        The atmosphere is relaxed and inviting, with comfortable seating and a warm, inviting ambiance. 
+        The staff is friendly and attentive, and the service is prompt and efficient. 
+        The restaurant also offers catering services for special occasions.
+        SHAHI Restaurant is the perfect place to enjoy a delicious meal with friends and family
+        A restaurant is a place where people visit to eat and drink the food being prepared on the premises and pays for the same. 
+        The food is served at the table to have a comfortable visit for your meals.
+        The restaurant offers a menu with various options for your meal, to choose from.</p>
+         <br>
+         <li>
+            <ul>Restaurants provide you with different cuisines of food to satisfy your hunger.</ul>
+            <ul>  The food preparation and presentation gives you a happy feel during your dull</ul>
+            <ul> The ambiance that a restaurant provides you with gives one all the more reason to visit to cherish their time.</ul>
+            <ul> The restaurant is a life savior when one doesnt feel like cooking or wants to eat something else.</ul>
+            <ul> You get to explore places when you plan to visit a restaurant.</ul>
+            <ul> The fast-food restaurant provides your meals on the go to save your time at affordable prices.</ul>
+            <ul> The restaurant is a place to enjoy your special occasions like Birthdays, Anniversaries, Achievements, etc.</ul>
+         </li>
+         <p1>
+         Once I stepped inside the restaurant I automatically could hear the music playing at a moderate level and the laughter of the customers.
+        Right off the back the restaurant's ambiance had a positive vibe. Mindful, it was a Saturday late afternoon.
+         Mary Jane Burger and Brew is a local restaurant trying to stay true to its past. 
+         The granddaughter of the original owner now runs the place with the intention of serving good quality food where the ingredients are fresh, mouth watering, and surely not filled with antibiotics and all that other genetically modified elements found in processed foods.
+          The vintage, rustic looking place, holds a small town atmosphere with a big taste.
+        </p>
+    
+</div>
+</body>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</html>

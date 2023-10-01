@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html >
+<head>
+     <title>Gallery of SHAHI restaurant</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  text-align: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Clearfix (clear floats) */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <h1>This Is All About Our Resturant Gallery</h1>
+       </div>
+       <div class="content">
+        <div class="row"> 
+          <div class="column">
+            <img src="kabab.jpeg" alt="kabab" style="width:100%">
+            <img src="tea.jpeg" alt="green tea" style="width:100%">
+            <img src="blacktea.jpeg" alt="black tea" style="width:100%">
+            <img src="Qabli.jpg" alt="its Qabli" style="width:100%">
+            <img src="mantu.jpeg" alt="its manto"  style="width:100%">
+            <img src="chopan kabab.jpg" alt=""style="width:100%">
+            <img src="ashak.jpg" alt="" style="width:100%">
+          </div>
+          <div class="column">   
+            <img src="mantu.jpeg" alt=""style="width:100%">
+            <img src="palo.jpg" alt=""style="width:100%">
+            <img src="naan.jpg" alt="its ashak" style="width:100%">
+            <img src="kabab.jpeg" alt="kabab" style="width:100%">
+            <img src="tea.jpeg" alt="green tea" style="width:100%">
+            <img src="blacktea.jpeg" alt="black tea" style="width:100%">
+          </div>  
+          <div class="column">
+            <img src="ashak.jpg" alt="" style="width:100%">
+            <img src="blacktea.jpeg" alt="black tea" style="width:100%">
+            <img src="kabab.jpeg" alt="kabab" style="width:100%">
+            <img src="tea.jpeg" alt="green tea" style="width:100%">
+            <img src="Qabli.jpg" alt="its Qabli" style="width:100%">
+            <img src="mantu.jpeg" alt="its manto"  style="width:100%">
+            <img src="chopan kabab.jpg" alt=""style="width:100%">
+            
+          </div>
+          <div class="column">
+            <img src="Qabli.jpg" alt="its Qabli" style="width:100%">
+            <img src="kabab.jpeg" alt="kabab" style="width:100%">
+            <img src="naan.jpg" alt="its ashak" style="width:100%">
+            <img src="blacktea.jpeg" alt="black tea" style="width:100%">
+           
+            <img src="mantu.jpeg" alt="its manto"  style="width:100%">
+            <img src="blacktea.jpeg" alt="black tea" style="width:100%">
+          </div>
+        </div>
+    </div>        
+</body>
+<script>
+    window.onscroll = function() {myFunction()};
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+</html>
